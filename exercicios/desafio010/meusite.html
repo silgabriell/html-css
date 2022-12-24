@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de notícias</title>
+  <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <style>
+  :root {
+    --cor0: #c5ebd6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA866;
+    --cor4: #1A5C37;
+    --cor5: #063d1e;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'bebas', cursive;
+    --fonte2: 'droid', sans-serif;
+
+  }
+
+    @font-face {
+      font-family: 'droid';
+      src: url(fontes/idroid.otf) format('truetype');
+    }
+    @font-face {
+      font-family: 'bebas';
+      src: url(fontes/BebasNeue-Regular.otf) format('truetype');
+    }
+
+    header {
+      background-image: linear-gradient(to top, var(--cor4), var(--cor3), var(--cor2));
+    }
+
+    header > p {
+      font-size: 1em;
+      font-family: var(--fonte0);
+      text-align: center;
+      color: white;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      text-shadow: 2px 2px 0px rgba(14, 13, 13, 0.26);
+    }
+
+    header > h1 {
+      font-family: var(--fonte1);
+      text-align: center;
+      color: white;
+      margin-top: 0px;
+      padding-top: 20px;
+      text-shadow: 2px 2px 0px rgba(14, 13, 13, 0.295);;
+    }
+
+    body {
+      background-color: var(--cor1);
+      margin: 0px;
+    }
+
+    nav {
+      color: white;
+      background-color: var(--cor4);
+      margin-top: 0px;
+      font-weight: bold;
+      padding: 10px;
+      word-spacing: 10px;
+    }
+
+    main {
+      margin: 0px auto 0px auto;
+      
+      
+      font-family: var(--fonte0);
+      min-width: 400px;
+      max-width: 800px;
+      background-color: white;
+      border-radius: 0px 0px 5px 5px;
+      box-shadow: 1px 2px 11px black;
+    }
+
+    main > article > p {
+      text-indent: 30px;
+      margin-right: 10px;
+      margin-left: 10px;
+      text-align: justify;
+    }
+
+    main > p {
+      text-indent: 30px;
+      margin-right: 10px;
+      margin-left: 10px;
+      padding-bottom: 15px;
+    }
+
+    
+
+    p > a {
+      color: var(--cor4);
+      font-size: larger;
+      text-decoration: none;
+    }
+    
+
+    div.tabela {
+      background-color: var(--cor1);
+      margin: 10px 10px;
+      padding: 0px;
+      border-radius: 5px;
+      
+      
+    }
+    
+    div.tabela > p.aprender {
+      background-color: var(--cor3);
+      margin: 0px;
+      padding: 10px;
+      color: white;
+      border-radius: 5px 5px 0px 0px;
+      font-weight: bold;
+      text-indent: 5px;
+    }
+    div.tabela > p {
+      padding: 5px;
+    }
+
+    div.humano {
+      text-align: center;
+      padding: 10px;
+    }
+    
+
+    div.video {
+      background-color: var(--cor4);
+    }
+
+    div.video > div.videoConteudo {
+      text-align: center;
+      padding: 20px;
+    }
+
+    p {
+      color: black;
+      line-height: 1.5em;
+      text-indent: 30px;
+    }
+    
+    ul {
+      list-style-type: '\2714\0020\0020';
+      columns: 2;
+      list-style-position: inside;
+      text-decoration: underline;
+    }
+
+    main > h1 {
+      font-family: var(--fonte2);
+      color: var(--cor4);
+      margin: 0px 10px;
+    }
+
+    article > h2 {
+      background-image: linear-gradient(to right, var(--cor1), var(--cor0), white);
+      color: var(--cor4);
+      font-family: var(--fonte2);
+      font-weight: bold;
+      font-size: normal;
+      margin: 0px 10px;
+      padding-left: 10px;
+    }
+
+    footer {
+      background-color: var(--cor4);
+      text-align: center;
+    }
+    footer > p {
+      color: white;
+      margin-bottom: 0px;
+    }
+  </style>
+  <header>
+    <h1>Curiosidades de Tecnologia</h1>
+    <p>Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar</p>
+  </header>
+  <nav>
+    Home
+    Notícias
+    Curiosidades
+    Fale Conosco
+  </nav>
+  <main>
+    <h1>História do Mascote do Android</h1>
+    <article>
+      <p>Provavelmente você sabe que o sistema operacional <a href="">Android</a>, mantido pelo <a href="">Google</a> é um dos mais utilizados para dispositivos móveis em todo o mundo. Mas tavez você não saiba que o seu simpático mascote tem um nome e uma história muito curiosa? Pois acompanhe esse artigo para aprender muita coisa sobre esse robozinho.</p>
+      
+      <h2>A primeira versão</h2>
+      <p>A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado <a href="">Dan Morrill</a>. Ele conta que abriu o <a href="">Inkscape</a> (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresa para a criação de um mascote.</p>
+      
+      <picture>
+        <source media="(max-width: 800px)" srcset="imagens/dan-droids-pq.png">
+        <img src="imagens/dan-droids.png" alt="imagemDroids">
+      </picture>
+      <p>Essa primeira versão bizarra até foi batizada em homenagem ao seu criador: seriam os Dandroids.</p>
+      
+      <h2>Surge um novo mascote</h2>
+      <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa <a href="">Irina Blok</a>, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p>
+      <picture>
+        <source media="(max-width: 800px)" srcset="imagens/irina-blok-pq.jpg" class="imagemMenor">
+        <img src="imagens/irina-blok.jpg" alt="criadora droid" class="criadora">
+      </picture>
+      <p>A ideia principal da Irina era representar tudo graficamente com poucos traços e de forma mais chapada. O desenho também deveria gerar identificação rápida com quem o olha. Surgiu então o <a href="">Bugdroid</a>, o novo mascote do Android.</p>
+      <div class="humano"><img src="imagens/bugdroid.png" alt="humanoDroid"></div>
+      <p>A principal inspiração para os traços do novo Bugdroid veio daqueles bonequinhos que ilustram portas de banheiro para indicar o gênero de cada porta. Conta a lenda que a artista estava criando em sua mesa no escritório do Google e olhou para o lado dos banheiros e a identificação foi imediata: simples, limpo, objetivo.</p>
+      
+        
+        <div class="video">
+          <div class="videoConteudo">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      
+        
+      <div class="tabela">
+        <p class="aprender">Quer aprender mais?</p>
+        <p>Outro assunto curioso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um doce, em ordem alfabética a partir da versão 1.5 até a 9.0.
+        
+        
+            <ul>
+              <li>1.5 - Cupcake</li>
+              <li>1.6 - Donut</li>
+              <li>3.0 - Eclair</li>
+              <li>2.2 - Froyo</li>
+              <li>2.3 - Gingerbread</li>
+              <li>3.0 - Honeycomb</li>
+              <li>4.0 - Ice Cream Sandwich</li>
+              <li>4.1 - Jelly Bean</li>
+              <li>4.4 - KitKat</li>
+              <li>5.0 - Lolipop</li>
+              <li>6.0 - Marshmallow</li>
+              <li>7.0 - Nougat</li>
+              <li>8.0 - Oreo</li>
+              <li>9.0 - Pie</li>
+            </ul>
+          </p>
+      
+        <p>Infelizmente, o Android Q não existiu, pois o Google resolveu pôr fim a essa divertida prática e começou a usar numerações, o que deu origem ao Android 10.</p>
+        <p>Acesse aqui o site <a href="">Android History</a> para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema Android.</p>
+      </div>
+    </article>
+    <p>Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema <a href="">Android</a> e seu simpático mascote.</p>
+  </main>
+  <footer>
+    <p>Site criado por <strong>Gabriel Silveira</strong> para o <strong>CursoemVideo</strong>.</p>
+
+  </footer>
+  
+</body>
+</html>
