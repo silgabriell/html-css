@@ -11,6 +11,10 @@
   padding: 0px;
 }
 
+html, body {
+  min-height: 100vh;
+}
+
 header {
   color: white;
   background-color: black;
@@ -23,6 +27,7 @@ header > h1 {
   color: white;
   font-size: 55px;
   padding-top: 75px;
+  font-variant: small-caps;
 }
 
 header > p > a {
@@ -40,31 +45,36 @@ a {
   color: white;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 main p {
   font-family:'Sriracha', cursive;
   font-size: 30px;
-  padding-top: 80px;
+  line-height: 2em;
+  padding-top: 10vh;
   padding-left: 20px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.315);
   max-width: 400px;
 }
 
 .imagem {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.459);
   background-size: cover;
-  background-position: center center;
   background-attachment: fixed;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.384);
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.438);
   
   min-height: 300px;
   color: white;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   margin-top: 80px;
 }
 
 .joaninha {
   background-image: url(imagens/background001.jpg);
+  background-position: right center;
 }
 
 .carta {
@@ -72,7 +82,7 @@ main p {
 }
 
 .imagem > p {
-  background-color: rgba(0, 0, 0, 0.219);
+  background-color: rgba(0, 0, 0, 0.295);
   padding-top: 10px;
   padding-right: 5px;
   padding-bottom: 10px;
