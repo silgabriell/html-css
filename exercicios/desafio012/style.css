@@ -81,6 +81,8 @@ main p {
   background-image: url(imagens/background002.jpg);
 }
 
+
+
 .imagem > p {
   background-color: rgba(0, 0, 0, 0.295);
   padding-top: 10px;
