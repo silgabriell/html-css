@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+
+
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to bottom, rgb(134, 16, 134), rgb(122, 4, 122), rgb(13, 13, 117));
+}
+
+
+main {
+  position: relative;
+  background-color: white;
+  max-width: 1000px;
+  height: 700px;
+  margin: 100px auto;
+
+  padding-top: 50px;
+  
+  text-align: center;
+
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px black;
+}
+
+header {
+  margin-bottom: 100px;
+  
+}
+
+label {
+  font-size: 1.2em;
+}
+
+input {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+#inome {
+  margin-top: 25px;
+  margin-bottom: 60px;
+  border: 2px solid rgb(126, 4, 116);
+  border-radius: 20px;
+  box-shadow: 1px 1px 4px black;
+  height: 40px;
+  width: 655px;
+}
+
+#isenha {
+  margin-top: 25px;
+  border: 2px solid rgb(126, 4, 116);
+  border-radius: 20px;
+  box-shadow: 1px 1px 4px black;
+  height: 40px;
+  width: 655px;
+}
+
+#submit > input {
+  background-image: linear-gradient(to bottom, rgb(211, 38, 211), rgb(100, 14, 150), rgb(17, 17, 138));
+  color: white;
+  margin-top: 80px;
+  border: 2px solid rgb(126, 4, 116);
+  box-shadow: 1px 1px 4px black;
+  border-radius: 30px;
+  height: 45px;
+  width: 147px; 
+}
+
+
+
